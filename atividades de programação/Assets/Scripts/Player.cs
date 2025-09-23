@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public float speed;
     private Rigidbody2D rigid;
 
-    public float jump_force = 5f;
+    public float jump_force = 7f;
     private bool isground = true;
     void Start()
     {
@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
     }
     void jump()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && isground == true)
+        if (Input.GetKeyDown(KeyCode.Space) && isground == true)
         {
             rigid.AddForce(Vector2.up * jump_force, ForceMode2D.Impulse);
             anim.SetInteger("transition", 2);
@@ -57,10 +57,12 @@ public class Player : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == Tag_ground)
+        if (collision.gameObject.tag == "Tag_ground")
         {
             isground = true;
+            anim.SetInteger("transition", 0);
             Debug.Log("está no chao");
         }
     }
+
 }
