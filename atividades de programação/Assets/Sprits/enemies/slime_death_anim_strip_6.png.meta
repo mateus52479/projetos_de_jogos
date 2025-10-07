@@ -109,10 +109,10 @@ TextureImporter:
       name: slime_death_anim_strip_6_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 15
-        height: 13
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,10 +131,10 @@ TextureImporter:
       name: slime_death_anim_strip_6_1
       rect:
         serializedVersion: 2
-        x: 19
-        y: 6
-        width: 14
-        height: 7
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,10 +153,10 @@ TextureImporter:
       name: slime_death_anim_strip_6_2
       rect:
         serializedVersion: 2
-        x: 35
-        y: 5
-        width: 61
-        height: 9
+        x: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,11 +171,77 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: slime_death_anim_strip_6_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5527fc5e4589f2c42b862bca323e5f6c
+      internalID: 1376248052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_death_anim_strip_6_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcbaa138fcfc4d45b7711295897358b
+      internalID: -1747839816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_death_anim_strip_6_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71a4a79e0db5c244b8defed55fa42a9
+      internalID: -2054909728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 50bb2a2a613110c439072c0e775d1478
     internalID: 0
     vertices: []
     indices: 
@@ -188,6 +254,9 @@ TextureImporter:
       slime_death_anim_strip_6_0: -619481976519917459
       slime_death_anim_strip_6_1: -4070623177008022339
       slime_death_anim_strip_6_2: 4250375330769356045
+      slime_death_anim_strip_6_3: 1376248052
+      slime_death_anim_strip_6_4: -1747839816
+      slime_death_anim_strip_6_5: -2054909728
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

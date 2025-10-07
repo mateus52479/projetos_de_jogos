@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Tag_round
   - Tag_ground
+  - Tag_death
   layers:
   - Default
   - TransparentFX

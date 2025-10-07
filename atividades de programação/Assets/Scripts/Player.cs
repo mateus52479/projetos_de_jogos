@@ -4,8 +4,11 @@ using UnityEngine.InputSystem.iOS;
 
 public class Player : MonoBehaviour
 {
+    public Vector2 posicao_inicial;
+    public GameManager gameManager;
+
     public Animator anim;
-    public float speed;
+    public float speed; 
     private Rigidbody2D rigid;
 
     public float jump_force = 7f;
@@ -14,7 +17,7 @@ public class Player : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody2D>();
-
+        posicao_inicial = transform.position;
     }
 
     // Update is called once per frame
@@ -61,8 +64,22 @@ public class Player : MonoBehaviour
         {
             isground = true;
             anim.SetInteger("transition", 0);
-            Debug.Log("está no chao");
+
+        }
+
+        if (collision.gameObject.tag == "Tag_death")
+        {
+            gameManager.alteraVidas(1);
+
         }
     }
+
+    public void reiniciar_posicao()
+    {
+        transform.position = posicao_inicial;
+
+
+    }
+
 
 }
