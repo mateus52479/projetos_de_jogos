@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     public Vector2 posicao_inicial;
     public GameManager gameManager;
+    private PlayerAudio playerAudio;
 
     public Animator anim;
     public float speed; 
@@ -17,6 +18,7 @@ public class Player : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody2D>();
+        playerAudio = GetComponent<PlayerAudio>();
         posicao_inicial = transform.position;
     }
 
@@ -56,6 +58,7 @@ public class Player : MonoBehaviour
             rigid.AddForce(Vector2.up * jump_force, ForceMode2D.Impulse);
             anim.SetInteger("transition", 2);
             isground = false;
+            playerAudio.PlaySFX(playerAudio.jumpSound);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
